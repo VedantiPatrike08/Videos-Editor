@@ -24,7 +24,7 @@ import {
   
 
 const VideoEditingPage = () => {
-  const [sidebarVisible, setSidebarVisible] = useState(true);
+  const [sidebarVisible/*, setSidebarVisible */] = useState(true);
   const [settingsVisible, setSettingsVisible] = useState(false);
 
   // const toggleSidebar = () => {
