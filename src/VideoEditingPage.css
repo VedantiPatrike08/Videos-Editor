@@ -1,0 +1,261 @@
+body, .container {
+overflow-y: hidden;
+}
+
+.video-editing-page {
+display: flex;
+height: 100vh;
+}
+
+.sidebar {
+width: 70px;
+background-color: #f8f6f6; 
+color: #393535; 
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border-right: 1px solid #ccc; 
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.sidebar-hidden {
+width: 0;
+overflow: hidden;
+}
+
+.sidebar-header {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px;
+}
+
+.sidebar-menu {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.sidebar-menu li {
+padding: 20px;
+text-align: center;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.sidebar-menu li:hover {
+background-color: #5065db; 
+}
+
+.main-content {
+flex: 1;
+background-color: #f9f9f9; 
+}
+
+.toggle-sidebar-button {
+border: none;
+background: none;
+font-size: 16px;
+cursor: pointer;
+}
+
+.settings-box {
+position: absolute;
+padding: 20px;
+margin: 20px;
+border: 1px solid #ccc;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+width: 400px;
+height: 500px;
+}
+
+.setting-option {
+margin-bottom: 15px;
+}
+
+/* .setting-option:hover{
+    background-color: #ccc;
+} */
+
+/* .background-options div {
+margin-right: 10px;
+} */
+
+.video-container {
+position: relative;
+float: right;
+width: 900px;
+height: 545px;
+margin-left: 20px; 
+margin-right: 20px;
+margin-bottom: 20px;
+box-sizing: border-box; 
+transition: box-shadow 0.3s ease; 
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+
+.video-container:hover{
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
+transition: box-shadow 0.3s ease; 
+}
+
+.zoom-controls {
+position: relative;
+display: flex;
+align-items: center;
+}
+
+.zoom-slider {
+width: 100px;
+height: 6px;
+background-color: #ccc;
+border-radius: 3px;
+margin:  5px;
+}
+
+.zoom-controls svg {
+margin: 0 5px;
+}
+
+.video-controls {
+display: flex;
+justify-content: space-between;
+align-items: center;
+bottom: 10px; 
+height: 140px;
+width: 100%;
+margin-right: 5px;
+padding: 0 10px; 
+padding-bottom: 70px;
+box-sizing: border-box;
+transition: box-shadow 0.3s ease;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-icons,
+.middle-icons,
+.right-icons {
+display: flex;
+align-items: center;
+}
+
+.video-controls svg {
+margin: 0 20px;
+}
+
+.left-icons svg,
+.right-icons svg {
+margin-right: 5px; 
+}
+
+.home-icon-go-back{
+    color: #393535; 
+    text-decoration: none;
+
+}
+/* ============================================
+  */
+  /* Add box styling to the elements */
+.background-option,
+.setting-option input[type="radio"] + label {
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.setting-option input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: white;
+}
+
+  /* ========================================== */
+
+  
+
+.settings-box {
+  position: absolute;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 500px;
+  z-index: 1; /* Add this to set the stacking order */
+  overflow-y: auto; /* Add this to enable vertical scrolling */
+  /* overflow: hidden; */
+}
+
+.video-container {
+  
+  z-index: 0; /* Add this to set the stacking order */
+}
+
+.video-controls {
+  position: relative; /* Remove 'absolute' positioning */
+  z-index: 2; /* Add this to set the stacking order above settings-box */
+}
+
+
+/* style to customize radio button labels */
+
+.setting-option input[type="radio"] + label[for="medium"] {
+  padding-left: 70px;
+  padding-right: 70px;
+
+}
+
+.setting-option input[type="radio"] + label {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Set the outer border color */
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+.setting-option input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: white;
+  
+}
+
+/* ... (your existing styles) ... */
+.background-option p{
+  /* display: inline-block; */
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Set the outer border color */
+  /* border-bottom: none; Remove bottom border (inner border) */
+  /* border-top: none; Remove top border (inner border) */
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: 25px;
+
+}
+.background-option p:hover{
+  background-color: #007bff;
+  color: white;
+}
+
+
+
+#size{
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-left: 30px;
+
+}
