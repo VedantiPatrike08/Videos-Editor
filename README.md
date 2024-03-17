@@ -1,3 +1,18 @@
+# My created Webpage looks like this:
+
+![ss1](https://github.com/VedantiPatrike08/Video-Editor/assets/162566298/013d2031-f585-4c5a-96c0-83d25f01f940)
+
+![ss2](https://github.com/VedantiPatrike08/Video-Editor/assets/162566298/6faaf06b-ceb0-4abf-91eb-453ede60fae4)
+
+![ss3](https://github.com/VedantiPatrike08/Video-Editor/assets/162566298/270ae8f5-cdea-4753-9e7c-dc9b3f4cb7d1)
+
+![ss4](https://github.com/VedantiPatrike08/Video-Editor/assets/162566298/4af39537-ab50-44bb-95c8-700fa9d8e37d)
+
+![ss5](https://github.com/VedantiPatrike08/Video-Editor/assets/162566298/14b1f795-7782-4d82-a53c-e86ac14b428c)
+
+![ss6](https://github.com/VedantiPatrike08/Video-Editor/assets/162566298/73db249f-e8e7-4581-abd0-aa6a6fe2ab7f)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
